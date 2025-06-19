@@ -4,11 +4,10 @@ spring:
       client:
         url:
         - http://localhost:1111/
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+   datasource:
+    url: jdbc:mysql://localhost:3306/majorproject
     username: root
     password: naren
-    url: jdbc:mysql://localhost:3306/majorproject
     
   jpa:
     hibernate:
