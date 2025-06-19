@@ -5,13 +5,14 @@ spring:
         url:
         - http://localhost:1111/
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: naren
     url: jdbc:mysql://localhost:3306/majorproject
-  
+    
   jpa:
     hibernate:
-      ddl-auto: 
+      ddl-auto: update
     show-sql: true
     
 management:
