@@ -1,1 +1,28 @@
 
+spring:
+  boot:
+    admin:
+      client:
+        url:
+        - http://localhost:2222/
+   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/infotech
+    username: root
+    password: naren
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+        
+server:
+  port: 9090
+  
